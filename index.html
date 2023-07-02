@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DÖVİZ KURU HESAPLA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Döviz Kuru Çevirici</h1>
+            <div class="hesapla">
+                <input placeholder="Miktar" type="number" id="mıktar">
+
+                <select class="mainMoney">
+                    <option  value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option selected value="try">TRY</option>
+                </select>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select class="resultMoney">
+                    <option selected value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="try">TRY</option>
+                </select>
+
+                <input placeholder="Sonuç" type="number" id="sonuc" disabled>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="currency.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
